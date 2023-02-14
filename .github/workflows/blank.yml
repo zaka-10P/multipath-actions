@@ -3,10 +3,10 @@ name: Check Folder Changes
 on:
   push:
     paths:
-      - '1/**' # Replace with the path to your folder
+      - 'packages/services/1/**' # Replace with the path to your folder
   pull_request:
     paths:
-      - '1/**' # Replace with the path to your folder
+      - 'packages/services/1/**' # Replace with the path to your folder
 
 jobs:
   check_changes:
@@ -18,4 +18,4 @@ jobs:
 
     - name: Check folder changes
       run: |
-        cat 1/test
+        cat packages/services/1/test
